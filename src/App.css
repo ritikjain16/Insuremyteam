@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #2f2b2f;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-con {
+  width: 60vw;
+  margin: 30px 0;
+  box-shadow: 5px 5px 15px rgb(89, 89, 89), -5px -5px 15px rgb(89, 89, 89);
+  padding: 20px;
+  border-radius: 5px;
+  /* background: linear-gradient(955deg, black, rgb(89, 89, 89)); */
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.post-con:nth-child(n) {
+  background: linear-gradient(55deg, black, rgb(89, 89, 89));
+}
+
+.post-con:nth-child(2n) {
+  background: linear-gradient(955deg, black, rgb(89, 89, 89));
+}
+
+.post-con h3 {
+  text-transform: capitalize;
+  line-height: 1.7;
+  color: wheat;
+  font-size: 22px;
+}
+
+.post-con p {
+  margin: 5px 5px;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  color: #cdc6c6;
+}
+
+.post-con:hover {
+  transform: scale(1.1);
+}
+
+.page {
+  margin: 20px;
+}
+
+.search-box {
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  /* margin: 50px; */
+  width: 40vw;
+  box-shadow: 5px 0px 15px rgb(180, 179, 179), -5px -5px 15px rgb(180, 179, 179);
+  background: linear-gradient(955deg, black, rgb(89, 89, 89));
+  border-radius: 50px;
+  color: wheat;
+  font-weight: 700;
+}
+
+.allposts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/* --------------navbar------------ */
+
+.navbar {
+  width: 100vw;
+  height: 70px;
+  background: linear-gradient(155deg, black, rgb(89, 89, 89));
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999999;
+  box-shadow: 5px 5px 15px rgb(180, 179, 179), -5px -5px 15px rgb(180, 179, 179);
+}
+
+
+.company-name{
+  color: wheat;
+  font-weight: bold;
+  font-style: italic;
+}
